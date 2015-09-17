@@ -38,7 +38,7 @@
     <Compile Include="HttpSerializer.cs" />
     <Compile Include="SslRequestProcesser.cs" />
     <Compile Include="LocalServer.cs" />
-    <Compile Include="Auth.cs" />
+    <Compile Include="Security.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
