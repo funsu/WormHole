@@ -21,10 +21,9 @@ namespace WormHoleCore
 		{
 			if (UrlUtility.LocationChecker.urlInChina (originalContext.Request.RawUrl)) {
 				new LocalRelay (originalContext);
-			} else if (Auth.LoggedIn) {
-				new RemoteRelay (originalContext);
 			} else {
 				new LocalRelay (originalContext);
+				//new RemoteRelay (originalContext);
 			}
 		}
 	}

@@ -48,10 +48,9 @@ namespace WormHoleCore
 			}
 			if (UrlUtility.LocationChecker.hostInChina (host))
 				localRelay ();
-			else if (Auth.LoggedIn)
-				remoteRelay ();
 			else
 				localRelay ();
+			//remoteRelay ();
 				
 		}
 
