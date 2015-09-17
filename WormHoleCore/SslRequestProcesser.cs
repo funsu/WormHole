@@ -22,17 +22,17 @@ namespace WormHoleCore
 			this.client = client;
 			clientStream = client.GetStream ();
 			//clientStream.CopyTo (Console.OpenStandardOutput ());
-			string host_temp;
+			string hostTemp;
 			try {
-				getConnectRequest (clientStream, out host_temp, out headers);
+				getConnectRequest (clientStream, out hostTemp, out headers);
 
-				if (host_temp.Contains (':')) {
-					var hosts = host_temp.Split (':');
-					host_temp = hosts [0];
+				if (hostTemp.Contains (':')) {
+					var hosts = hostTemp.Split (':');
+					hostTemp = hosts [0];
 					int.TryParse (hosts [1], out port);
 				} else
 					port = 443;
-				host = host_temp;
+				host = hostTemp;
 			} catch (Exception e) {
 				Console.WriteLine (e);
 				client.Close ();
