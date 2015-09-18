@@ -35,10 +35,10 @@
     <Compile Include="RequestProcesser.cs" />
     <Compile Include="LocalRelay.cs" />
     <Compile Include="RemoteRelay.cs" />
-    <Compile Include="HttpSerializer.cs" />
     <Compile Include="SslRequestProcesser.cs" />
     <Compile Include="LocalServer.cs" />
     <Compile Include="Security.cs" />
+    <Compile Include="HeaderSerializer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
